@@ -16,7 +16,9 @@ export class ApiService {
 
   //Usando la enviroment - Nos trae todos los datos desde nuestra url base
   public getPokemons() {
-    return this.http.get(`${environment.PokeApiBase}/pokemon`)
+
+     return this.http.get(`${environment.PokeApiBase}/pokemon`)
+  
   }
 
   //Obtener pokemon por el nombre
